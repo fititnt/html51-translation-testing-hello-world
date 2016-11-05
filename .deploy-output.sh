@@ -21,6 +21,6 @@ git add .
 git commit -m "Built by Travis-CI: $STATUS"
 git status
 
-GH_REPO="@github.com/w3c/html.git"
+GH_REPO="@github.com/fititnt/html51-translation-testing-hello-world.git"
 FULL_REPO="https://$GH_TOKEN$GH_REPO"
-git push --force --quiet $FULL_REPO master:gh-pages > /dev/null 2>&1
+git push --force --quiet $FULL_REPO html5.1-translation-pt:gh-pages > /dev/null 2>&1
