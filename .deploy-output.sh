@@ -22,5 +22,5 @@ git commit -m "Built by Travis-CI: $STATUS"
 git status
 
 GH_REPO="@github.com/fititnt/html51-translation-testing-hello-world.git"
-FULL_REPO="https://$GH_TOKEN$GH_REPO"
+FULL_REPO="https://$GITHUB_API_KEY$GH_REPO" # GITHUB_API_KEY is env var from travis web interface, see http://stackoverflow.com/a/33125422/894546
 git push --force --quiet $FULL_REPO html5.1-translation-pt:gh-pages > /dev/null 2>&1
